@@ -1,0 +1,5 @@
+export default {
+    LOADING: 'LOADING',
+    COUNTER_INC: 'COUNTER_INC',
+    COUNTER_DEC: 'COUNTER_DEC'
+}
