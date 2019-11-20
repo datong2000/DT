@@ -8,7 +8,7 @@ import {
 import '@/lib/normalize.css'
 import VueCookie from 'vue-cookie'
 import vueMeta from 'vue-meta'
-// import './registerServiceWorker'
+import './registerServiceWorker'
 
 Vue.use(VueCookie)
 Vue.use(vueMeta, {

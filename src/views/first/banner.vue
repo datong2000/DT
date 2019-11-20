@@ -3,33 +3,33 @@
     <div id="loopDiv">
       <ul id="list">
         <li>
-          <div style="background:yellow;"></div>
-          <div style="background:red;"></div>
-          <div style="background:orange;"></div>
+          <img src="@/assets/1.jpg" alt />
+          <img src="@/assets/2.jpg" alt />
+          <img src="@/assets/3.jpg" alt />
         </li>
         <li>
-          <div style="background:red;"></div>
-          <div style="background:green;"></div>
-          <div style="background:blue;"></div>
+          <img src="@/assets/4.jpg" alt />
+          <img src="@/assets/5.jpg" alt />
+          <img src="@/assets/6.jpg" alt />
         </li>
         <li>
-          <div style="background:green;"></div>
-          <div style="background:red;"></div>
-          <div style="background:green;"></div>
+          <img src="@/assets/7.jpg" alt />
+          <img src="@/assets/8.jpg" alt />
+          <img src="@/assets/9.jpg" alt />
         </li>
         <li>
-          <div style="background:blue;"></div>
-          <div style="background:orange;"></div>
-          <div style="background:blue;"></div>
+          <img src="@/assets/10.jpg" alt />
+          <img src="@/assets/11.jpg" alt />
+          <img src="@/assets/12.jpg" alt />
         </li>
         <li>
-          <div style="background:orange;"></div>
-          <div style="background:red;"></div>
-          <div style="background:orange;"></div>
+          <img src="@/assets/13.jpg" alt />
+          <img src="@/assets/14.jpg" alt />
+          <img src="@/assets/15.jpg" alt />
         </li>
       </ul>
-      <div id="left" @click="app.left()">&lt;</div>
-      <div id="right" @click="app.right()">&gt;</div>
+      <div id="left" class="bar" @click="app.left()">&lt;</div>
+      <div id="right" class="bar" @click="app.right()">&gt;</div>
     </div>
   </div>
 </template>
@@ -93,13 +93,13 @@ export default {
     this.app = new banner("loopDiv", "list", 1000);
     this.app.banner();
   }
-};
+}
 </script>
 
 <style lang="less">
 #loopDiv {
-  width: 200px;
-  height: 340px;
+  width: 600px;
+  height: 200px;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -112,34 +112,32 @@ export default {
   margin: 0;
   top: 0;
   left: 0;
-  height: 340px;
-  width: 1000px;
+  height: 200px;
+  width: 3000px;
 }
 #list li {
   float: left;
-  width: 200px;
-  height: 340px;
+  width: 600px;
+  height: 200px;
 }
-#list li div {
+#list li img {
   display: inline-block;
   width: 33.33%;
   height: 100%;
 }
 
-#left {
+.bar {
   position: absolute;
   padding: 15px;
   background: #fff;
-  left: 0px;
-  top: 130px;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
+#left {
+  left: 0px;
+}
 #right {
-  position: absolute;
-  padding: 15px;
-  background: #fff;
   right: 0px;
-  top: 130px;
-  cursor: pointer;
 }
 </style>
