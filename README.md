@@ -18,4 +18,7 @@ npm i
 npm run serve
 ```
 
-`pwa` 也可访问 dt2000.cn 安装
+也可访问 dt2000.cn 安装 `pwa` 应用
+
+> [我的网站](http://dt2000.cn)
+
